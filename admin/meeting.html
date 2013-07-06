@@ -1,0 +1,102 @@
+{% autoescape off %}
+
+
+<script>
+	$(function() {
+		var availableTags = {{names}};
+		$( "#students" ).autocomplete({
+			source: availableTags
+		});
+	});
+	
+function changeall()
+{
+	master = document.getElementsByName("master")[0]
+	for(x=0; x< {{numstudents}}; ++x)
+	{
+		name = "cb" + x
+		cb = document.getElementsByName(name)[0]
+		cb.checked = master.checked;
+	}
+}
+</script>
+
+<!-- Content -->
+<div id="content">
+	
+	<!-- Box -->
+	<div class="box">
+		<!-- Box Head -->
+		<div class="box-head">
+			<h2 class="left">Date: {{date}} &nbsp;&nbsp;&nbsp;Type: {{type}} &nbsp;&nbsp;&nbsp;Students: {{numstudents}}</h2>
+		</div>
+		<!-- End Box Head -->	
+		
+		<form action="editmeeting?key={{key}}" method="post">
+
+		<!-- Table -->
+		<div class="table">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<th width="13"><input name="master" type="checkbox" onchange="changeall()" class="checkbox" /></th>
+					<th>Name</th>
+					<th width="110" class="ac">Content Control</th>
+				</tr>
+				{{students}}
+
+			</table>
+			
+			
+			
+		</div>
+		<!-- Table -->
+
+
+		<br>
+		&nbsp;&nbsp;&nbsp;<h2>Meeting Description:</h2><br>
+		&nbsp;&nbsp;&nbsp;<textarea name="desc" rows="8" cols="30">{{desc}}</textarea>
+		
+		<div class="buttons">
+			<input type="submit" class="button" value="save" />
+		</div>
+		
+		</form>
+
+	</div>
+	<!-- End Box -->
+	
+
+
+</div>
+<!-- End Content -->
+
+
+
+<!-- Sidebar -->
+<div id="sidebar">
+	
+	<!-- Box -->
+	<div class="box">
+		
+		<!-- Box Head -->
+		<div class="box-head">
+			<h2>Add Student</h2>
+		</div>
+		<!-- End Box Head-->
+		
+		<div class="box-content">
+		<form action="addstudent?key={{key}}" method="post">
+
+			<div class="buttons">
+			<input name="student" id="students">
+			
+				<input type="submit" class="button" value="Add Student" />
+			</div>
+		</form>
+		</div>
+	</div>
+	<!-- End Box -->
+</div>
+<!-- End Sidebar -->
+
+{% endautoescape %}

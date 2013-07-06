@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="milkyway/theme/stylesheet.css" type="text/css" /> 
+
+<div class="bc-tbl bc-div"> 
+	<p class="bc-header"> 
+		<a href="./index.php?style=13">Forum index</a> 
+	</p> 
+	<div class="bc-links"> 
+		<a href="unanswered">View unanswered posts</a><br /> 
+		&nbsp;
+	</div> 
+</div> 
+	<br><br>
+	<div id="f_1_h" style="display: none;"> 
+		<div><div class="tbl-h-l"><div class="tbl-h-r"><div class="tbl-h-c"><img style="padding-top: 9px; padding-right: 6px; float: right; cursor: pointer;" src="theme/images/icon_maximize.gif" onclick="ShowHide('f_1', 'f_1_h', 'f_1');" alt="Forum" /><div class="tbl-title"><h4><a href="./viewforum.php?style=13&amp;f=1">Speech and Debate Discussion Forums</a></h4></div></div></div></div> 
+		<table class="tablebg" width="100%" cellpadding="0" cellspacing="0"> 
+		<tr><td class="row1"><span class="gensmall">&nbsp;</span></td></tr> 
+		</table> 
+		<div class="tbl-f-l"><div class="tbl-f-r"><div class="tbl-f-c">&nbsp;</div></div></div></div> 
+		<br /> 
+		</div> 
+ 
+		<div id="f_1"> 
+		<script type="text/javascript"> 
+		<!--
+		tmp = 'f_1';
+		if(GetCookie(tmp) == '2')
+		{
+			ShowHide('f_1', 'f_1_h', 'f_1');
+		}
+		//-->
+		</script> 
+		<div><div class="tbl-h-l"><div class="tbl-h-r"><div class="tbl-h-c"><div class="tbl-title"><h4>Event Discussion Forums</h4></div></div></div></div> 
+		<table class="tablebg" width="100%" cellpadding="0" cellspacing="0"> 
+		<tr> 
+			<th colspan="2">&nbsp;Forum&nbsp;</th> 
+			<th width="50">&nbsp;Topics&nbsp;</th> 
+			<th width="50">&nbsp;Posts&nbsp;</th> 
+			<th>&nbsp;Last post&nbsp;</th> 
+		</tr> 
+	
+		{{forums}}
+		
+
+		
+	<tr><td class="cat-bottom" colspan="5">&nbsp;</td></tr> 
+	</table> 
+	<div class="tbl-f-l"><div class="tbl-f-r"><div class="tbl-f-c">&nbsp;</div></div></div></div> 
+	</div> 
+	<br /> 

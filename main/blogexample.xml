@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://www.blogger.com/styles/atom.css" type="text/css"?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:georss='http://www.georss.org/georss' xmlns:thr='http://purl.org/syndication/thread/1.0'>
+<id>tag:blogger.com,1999:blog-8366869362862830797</id>
+<updated>2011-07-02T12:35:55.330-07:00</updated>
+<title type='text'>Hamilton Speech and Debate News</title>
+<subtitle type='html'></subtitle>
+<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='http://news.hamiltonforensics.net/feeds/posts/default'/>
+<link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8366869362862830797/posts/default'/>
+<link rel='alternate' type='text/html' href='http://news.hamiltonforensics.net/'/>
+<link rel='hub' href='http://pubsubhubbub.appspot.com/'/>
+
+<author>
+<name>Speech and Debate Website Admin</name>
+<uri>http://www.blogger.com/profile/06517088002918020167</uri>
+<email>admin@hamiltonforensics.net</email>
+</author>
+
+<generator version='7.00' uri='http://www.blogger.com'>Blogger</generator>
+<openSearch:totalResults>2</openSearch:totalResults>
+
+<openSearch:startIndex>1</openSearch:startIndex>
+<openSearch:itemsPerPage>25</openSearch:itemsPerPage>
+
+<entry>
+
+<id>tag:blogger.com,1999:blog-8366869362862830797.post-7042759827513543111</id>
+<published>2011-07-01T18:52:00.001-07:00</published>
+<updated>2011-07-01T18:52:27.734-07:00</updated>
+<category scheme='http://www.blogger.com/atom/ns#' term='PFD'/>
+<category scheme='http://www.blogger.com/atom/ns#' term='General'/>
+<title type='text'>Test Post 2</title>
+
+<content type='html'>
+
+This post is to test event specific posts.&lt;br /&gt;&lt;br /&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare consequat tortor quis porttitor. Aliquam sed fringilla arcu. Maecenas sit amet cursus augue. Donec felis eros, luctus at blandit ac.&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8366869362862830797-7042759827513543111?l=news.hamiltonforensics.net' alt='' /&gt;&lt;/div&gt;
+
+</content>
+
+<link rel='replies' type='application/atom+xml' href='http://news.hamiltonforensics.net/feeds/7042759827513543111/comments/default' title='Post Comments'/>
+
+<link rel='replies' type='text/html' href='http://news.hamiltonforensics.net/2011/07/test-post-2.html#comment-form' title='1 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8366869362862830797/posts/default/7042759827513543111'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8366869362862830797/posts/default/7042759827513543111'/><link rel='alternate' type='text/html' href='http://news.hamiltonforensics.net/2011/07/test-post-2.html' title='Test Post 2'/>
+
+<author>
+<name>Speech and Debate Website Admin</name>
+
+<uri>http://www.blogger.com/profile/06517088002918020167</uri>
+
+<email>admin@hamiltonforensics.net</email>
+
+<gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='17411531585316211643'/>
+
+</author>
+
+<thr:total>1</thr:total>
+
+</entry>
+
+
+
+<entry><id>tag:blogger.com,1999:blog-8366869362862830797.post-5481994228892361364</id><published>2011-07-01T18:51:00.001-07:00</published><updated>2011-07-01T18:51:50.302-07:00</updated><category scheme='http://www.blogger.com/atom/ns#' term='General'/><title type='text'>Test Post</title><content type='html'>This post is solely for a test. Please disregard.&lt;br /&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare consequat tortor quis porttitor. Aliquam sed fringilla arcu. Maecenas sit amet cursus augue. Donec felis eros, luctus at blandit ac.&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8366869362862830797-5481994228892361364?l=news.hamiltonforensics.net' alt='' /&gt;&lt;/div&gt;
+
+
+</content><link rel='replies' type='application/atom+xml' href='http://news.hamiltonforensics.net/feeds/5481994228892361364/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://news.hamiltonforensics.net/2011/07/test-post.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8366869362862830797/posts/default/5481994228892361364'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8366869362862830797/posts/default/5481994228892361364'/><link rel='alternate' type='text/html' href='http://news.hamiltonforensics.net/2011/07/test-post.html' title='Test Post'/><author><name>Speech and Debate Website Admin</name><uri>http://www.blogger.com/profile/06517088002918020167</uri><email>admin@hamiltonforensics.net</email><gd:extendedProperty xmlns:gd='http://schemas.google.com/g/2005' name='OpenSocialUserId' value='17411531585316211643'/></author><thr:total>0</thr:total></entry></feed>

@@ -1,0 +1,59 @@
+{% autoescape off %}
+
+			<!-- Content -->
+			<div id="content">
+				
+				{{error}}
+				
+				<!-- Box -->
+				<div class="box">
+					<!-- Box Head -->
+					<div class="box-head">
+						<h2>Register New User</h2>
+					</div>
+					<!-- End Box Head -->
+					
+					<form action="" method="post">
+						
+						<!-- Form -->
+						<div class="form">
+								<p>
+									<label>Full Name of Student<span>(Required Field)</span></label>
+									<input name="name" type="text" class="field size1" value="{{name}}"/>
+								</p>	
+								<p>
+									<label>Username<span>(Required Field)</span></label>
+									<input name="username" type="text" class="field size1" value="{{username}}"/>
+								</p>
+								
+								<p>
+									<label>Email<span>(Required Field)</span></label>
+									<input name="email" type="text" class="field size1" value="{{email}}"/>
+								</p>
+								
+								<p>
+									<label>Permissions</label>
+									<input name="perms" type="text" class="field size1" value="{{perms}}"/>
+								</p>	
+								
+								<p>
+									<label>Tags</label>
+									<input name="tags" type="text" class="field size1" value="{{tags}}"/>
+								</p>	
+							
+						</div>
+						<!-- End Form -->
+						
+						<!-- Form Buttons -->
+						<div class="buttons">
+							<input type="submit" class="button" value="Register" />
+						</div>
+						<!-- End Form Buttons -->
+					</form>
+				</div>
+				<!-- End Box -->
+
+			</div>
+			<!-- End Content -->
+			
+{% endautoescape %}

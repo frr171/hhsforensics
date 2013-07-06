@@ -1,0 +1,131 @@
+<link rel="stylesheet" href="milkyway/theme/stylesheet.css" type="text/css" /> 
+<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+
+<div class="bc-tbl bc-div"> 
+	<p class="bc-header"> 
+		<a href="/forum">Forum index</a>&nbsp;&#187;&nbsp;<a href="/viewforum?id={{forumid}}">{{forumname}}</a>&nbsp;&#187;&nbsp;<a href="/viewtopic?key={{key}}">{{name}}</a>
+	</p> 
+
+</div>
+
+
+<br /> 
+
+<div id="pageheader"> 
+	<h2><a class="titles" href="viewtopic?key={{key}}">{{name}}</a></h2> 
+</div> 
+
+<br clear="all" /><br /> 
+
+<div id="pagecontent"> 
+ 
+	<table width="100%" cellspacing="1"> 
+	<tr> 
+		<td align="left" valign="middle" nowrap="nowrap"> 
+		</td> 
+			<td class="gensmall" nowrap="nowrap">&nbsp;[ {{numposts}} posts ]&nbsp;</td> 
+			<td class="gensmall" width="100%" align="right" nowrap="nowrap"></td> 
+		
+	</tr> 
+	</table> 
+
+	<table class="tablebg" width="100%" cellpadding="0" cellspacing="0"> 
+		
+		<tr> 
+			<th>Author</th> 
+			<th>Message</th> 
+		</tr> 
+	
+	{{posts}}
+	
+	
+	
+	
+	
+		<tr> 
+	
+		<td class="row-post-top" align="center" valign="middle"> 
+			<a name="p1"></a> 
+		</td> 
+		<td class="row-post-top" width="100%"> 
+			<table width="100%" cellspacing="0"> 
+			<tr> 
+			
+				<td class="gensmall" width="100%"><div style="float:left;">&nbsp;<b>Post a reply to:</b> {{name}}</div></td> 
+			</tr> 
+			</table> 
+		</td> 
+	</tr> 
+	
+	
+ 
+	<tr> 
+		<td class="row-post-body" valign="top"> 
+			
+			<table cellspacing="4" width="150"> 
+			
+
+			
+			</table> 
+		</td> 
+		<td class="row-post-body" valign="top"> 
+			<table width="100%" cellspacing="5"> 
+			<tr> 
+				<td> 
+				
+ 
+					<div class="postbody">
+					
+					<form action="postreply?topic={{key}}" method="post">
+					
+					<textarea class="ckeditor" name="editor1"></textarea><br>
+					
+					<div style="float:right;">
+					<h4><input type="submit" value="Post Reply" /></h4>
+					</div>
+					
+					</form>
+					
+					</div> 
+ 
+				<br clear="all" /><br /> 
+ 
+					<table width="100%" cellspacing="0"> 
+					<tr valign="middle"> 
+						<td class="gensmall" align="right"> 
+						
+						</td> 
+					</tr> 
+					</table> 
+				</td> 
+			</tr> 
+			</table> 
+		</td> 
+	</tr> 
+ 
+	<tr> 
+		<td class="row-post-bottom" align="center"></td> 
+		<td class="row-post-bottom"><div class="gensmall" style="float:right;">&nbsp;  &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td> 
+	
+	</tr> 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<tr><td class="spacer" colspan="2"><img src="milkyway/theme/images/spacer.gif" width="1" height="4" alt="" /></td></tr> 
+ 
+	<tr><br><br></tr> 
+ 
+	</table> 
+	<div class="tbl-f-l"><div class="tbl-f-r"><div class="tbl-f-c">&nbsp;</div></div></div></div> 
+	
+	
+	
+	
+</div>

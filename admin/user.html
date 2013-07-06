@@ -1,0 +1,112 @@
+{% autoescape off %}
+
+<script type="text/javascript">
+$(function() {
+
+$( "#personal" ).dialog({
+	autoOpen: false,
+	height: 300,
+	width: 350,
+	modal: true
+	
+	});
+	
+$( "#able" ).dialog({
+	autoOpen: false,
+	height: 300,
+	width: 350,
+	modal: true
+	
+	});
+
+});
+</script>
+
+<div id="personal" title="Edit Personal Details">
+
+	<form action="viewuser?key={{key}}&type=personal" method="post" >
+	
+		<h2>Name:</h2><br>
+		<input name="name" type="text" class="field size3" value="{{name}}"/><br><br>
+		
+		<h2>Username:</h2><br>
+		<input name="username" type="text" class="field size3" value="{{username}}"/><br><br>
+		
+		<h2>Email:</h2><br>
+		<input name="email" type="text" class="field size3" value="{{email}}"/><br><br>
+		
+		<div class="buttons">
+			<input type="submit" class="button" value="save" />
+		</div>
+	</form>
+</div>
+
+<div id="able" title="Edit Groups and Abilities">
+
+	<form action="viewuser?key={{key}}&type=able" method="post" >
+	
+		<h2>Permissions:</h2><br>
+		<input name="perms" type="text" class="field size3" value="{{perms}}"/><br><br>
+		
+		<h2>Tags:</h2><br>
+		<input name="tags" type="text" class="field size3" value="{{tags}}"/><br><br>
+		
+		<div class="buttons">
+			<input type="submit" class="button" value="save" />
+		</div>
+	</form>
+</div>
+
+
+
+<!-- Content -->
+<div id="content">
+	
+	<!-- Box -->
+	<div class="box">
+		<!-- Box Head -->
+		<div class="box-head">
+			<h2>User: {{name}}</h2>
+		</div>
+		<!-- End Box Head -->
+		
+		<br><br>
+		{{picture}}
+		<br><br>
+		
+		&nbsp;&nbsp;&nbsp;<h2 style="display: inline;">Personal Details</h2><a href="javascript:$( '#personal' ).dialog( 'open' );" class="ico edit">Edit</a>
+		<hr><br>
+		&nbsp;&nbsp;&nbsp;<strong>Name:</strong> {{name}}<br>
+		&nbsp;&nbsp;&nbsp;<strong>Username:</strong> {{username}}<br>
+		&nbsp;&nbsp;&nbsp;<strong>Email:</strong> {{email}}<br>
+		
+		<br>
+		&nbsp;&nbsp;&nbsp;<h2 style="display: inline;">Password</h2>
+		<hr><br>
+		&nbsp;&nbsp;&nbsp;<strong>Password Hash:</strong> {{pass}}<br>
+		&nbsp;&nbsp;&nbsp;<a href="resetpassword?key={{key}}"><strong>Click Here to Reset</strong></a><br>
+		
+		<br>
+		&nbsp;&nbsp;&nbsp;<h2 style="display: inline;">Groups and Abilities</h2><a href="javascript:$( '#able' ).dialog( 'open' );" class="ico edit">Edit</a>
+		<hr><br>
+		&nbsp;&nbsp;&nbsp;<strong>Permissions:</strong> {{perms}}<br>
+		&nbsp;&nbsp;&nbsp;<strong>Tags:</strong> {{tags}}<br>
+		
+		<br>
+		&nbsp;&nbsp;&nbsp;<h2 style="display: inline;">Attendence Record</h2>
+		<hr><br>
+		&nbsp;&nbsp;&nbsp;<strong>Attendance Rate: </strong> {{rate}}%<br>
+		<br>&nbsp;&nbsp;&nbsp;<strong>Absences:</strong> {{numabs}} total<br>
+		{{abs}}
+		<br>&nbsp;&nbsp;&nbsp;<strong>Attendances:</strong> {{numattend}} total<br>
+		{{attend}}
+		
+		<br><br>
+
+	</div>
+	<!-- End Box -->
+
+</div>
+<!-- End Content -->
+
+{% endautoescape %}

@@ -1,0 +1,44 @@
+{% autoescape off %}
+
+			<!-- Content -->
+			<div id="content">
+				
+				<!-- Box -->
+				<div class="box">
+					<!-- Box Head -->
+					<div class="box-head">
+						<h2 class="left">Registered Users</h2>
+					</div>
+					<!-- End Box Head -->	
+
+					<!-- Table -->
+					<div class="table">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<th>Name</th>
+								<th>Username</th>
+								<th>Email</th>
+								<th>Date Registered</th>
+								<th width="110" class="ac">Edit</th>
+							</tr>
+							
+							{{ userlist }}
+						</table>
+						
+						<form action="newuser" method="post">
+						<div class="buttons">
+							<input type="submit" class="button" value="Register New User" />
+						</div>
+						</form>
+						
+					</div>
+					<!-- Table -->
+					
+				</div>
+				<!-- End Box -->
+				
+
+			</div>
+			<!-- End Content -->
+			
+{% endautoescape %}

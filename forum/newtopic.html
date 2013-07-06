@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="milkyway/theme/stylesheet.css" type="text/css" /> 
+<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+
+<div class="bc-tbl bc-div"> 
+	<p class="bc-header"> 
+		<a href="/forum">Forum index</a>&nbsp;&#187;&nbsp;<a href="/viewforum?id={{id}}">{{name}}</a>&nbsp;&#187;&nbsp;<a href="/newtopic?id={{id}}">New Topic</a>
+	</p> 
+
+</div> 
+<br />
+
+	<div id="pageheader"> 
+		<h2><a class="titles" href="viewforum?id={{id}}">New Topic in {{name}}</a></h2> 
+	</div> <br>
+	
+<div id="pagecontent"> 
+
+		<table width="100%" cellspacing="1"> 
+		<tr> 
+			
+				<td class="gensmall" width="100%" align="right" nowrap="nowrap"></td> 
+			
+		</tr> 
+		</table> 
+		
+		
+				<div><div class="tbl-h-l"><div class="tbl-h-r"><div class="tbl-h-c"><div class="tbl-title"><h4><a href="viewforum?id={{id}}">New Topic in {{name}}</a></h4></div></div></div></div> 
+		<table class="tablebg" width="100%" cellpadding="0" cellspacing="0"> 
+		<tr> 
+			<td class="cat" colspan="7"> 
+				<table width="100%" cellspacing="0"> 
+				<tr class="nav"> 
+					<td valign="middle">&nbsp;</td> 
+					<td align="right" valign="middle">&nbsp;</td> 
+				</tr> 
+				</table> 
+			</td> 
+		</tr> 
+ 
+		<tr> 
+			<th>
+			<div style="float:left;">
+	<br><br>
+	<form action="newtopic?id={{id}}" method="post">
+	<strong style="float:left;">Topic Title:</strong><br>
+	<input style="float:left;" name="title" size="50" type="text"/><br><br>
+	<strong style="float:left;">Post Content:</strong><br>
+	<textarea class="ckeditor" name="editor1"></textarea><br>
+	<h1><input type="submit" value="Submit"/><br><br></h1>
+	</form>
+	
+	</div>
+</th>
+		
+		<tr> 
+			<td class="cat-bottom" colspan="7"> 
+				<br>
+			</td> 
+		</tr> 
+		
+		</table> 
+		<div class="tbl-f-l"><div class="tbl-f-r"><div class="tbl-f-c">&nbsp;</div></div></div></div> 
+	
+		<table width="100%" cellspacing="1"> 
+		<tr> 
+				<td class="gensmall" width="100%" align="right" nowrap="nowrap"></td> 
+			
+		</tr> 
+		</table> 
+	
+ 
+	<br clear="all" /> 
+
+
+</div>

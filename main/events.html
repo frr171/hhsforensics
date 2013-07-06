@@ -1,0 +1,24 @@
+{% autoescape off %}
+
+<!-- Three Column Content -->
+<div class="cols three-cols">
+	<div class="cl">&nbsp;</div>
+	<div style="padding-right:0px; width:150px;" class="col">
+		<h2>Events</h2>
+		<hr><br>
+		<div>
+		<p ><a {{pfd}} href="events?event=pfd" class="more">Public Forum Debate</a></p>
+		<p><a {{ld}} href="events?event=ld" class="more">Lincoln-Douglas Debate</a></p>
+		<p><a {{policy}} href="events?event=policy" class="more">Policy Debate</a></p>
+		<p><a {{congress}} href="events?event=congress" class="more">Congress</a></p>
+		<p><a {{speech}} href="events?event=speech" class="more">Speech Events</a></p>
+		</div>
+	</div>
+	<div class="col col-last" style="padding-left:0px; width:630px;">
+		{{page}}
+	</div>
+	<div class="cl">&nbsp;</div>
+</div>
+<!-- END Three Column Content -->
+
+{% endautoescape %}

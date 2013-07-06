@@ -1,0 +1,46 @@
+{% autoescape off %}
+
+
+<!-- Content -->
+<div id="content">
+	
+	<!-- Box -->
+	<div class="box">
+		<!-- Box Head -->
+		<div class="box-head">
+			<h2 class="left">Pages</h2>
+			
+				
+				<form action="newpage" method="post">
+				<div class="right">
+					<label>Name:</label>
+					<input name="name" type="text" class="field small-field" />
+					<input type="submit"  class="button" value="Create New" />
+					</div>
+				</form>
+			
+		</div>
+		<!-- End Box Head -->	
+
+		<!-- Table -->
+		<div class="table">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<th>Name</th>
+					<th width="110" class="ac">Content Control</th>
+				</tr>
+				{{pages}}
+			</table>
+			
+			
+		</div>
+		<!-- Table -->
+		
+	</div>
+	<!-- End Box -->
+	
+
+</div>
+<!-- End Content -->
+
+{% endautoescape %}

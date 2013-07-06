@@ -1,0 +1,23 @@
+{% autoescape off %}
+
+<h1>{{name}}</h1><hr><br>
+
+
+<img src="http://www.gravatar.com/avatar/{{emailhash}}?d=mm&s=200" /><br><br>
+
+<h2>Personal Details</h2><hr>
+<strong>Name:</strong> {{name}}<br>
+<strong>Email:</strong> {{email}}<br>
+<strong>Tags:</strong> {{tags}}<br>
+<br>
+
+<h2 style="display: inline;">Attendence Record</h2>
+<hr><br>
+<strong>Attendance Rate: </strong> {{rate}}%<br>
+<br><strong>Absences:</strong> {{numabs}} total<br>
+{{abs}}
+<br><strong>Attendances:</strong> {{numattend}} total<br>
+{{attend}}
+<br><br><br>
+
+{% endautoescape %}
