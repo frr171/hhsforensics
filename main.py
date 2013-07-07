@@ -201,7 +201,7 @@ class HomePage(webapp.RequestHandler):
 		'''
 		try:
 		
-			calendarurl = "http://www.google.com/calendar/ical/hamiltonforensics.net_8iq75b8enqrro2pd1nkej04unc%40group.calendar.google.com/private-50f411f82971bce5a7c43106b4e0f37d/basic.ics"
+			calendarurl = "https://www.google.com/calendar/ical/kriqpasfja2bsaa39djpjndfa8%40group.calendar.google.com/public/basic.ics"
 			
 			calendardata = urlfetch.fetch(calendarurl)
 			if calendardata.status_code == 200:
